@@ -211,6 +211,11 @@ address {
         font-size: 12px; } }
 
 /* celeb-view 추가 */
+.celeb-view #bo_v_con img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto; }
 .celeb-view .product-aspect .product-img {
   text-align: left;
   padding-left: 0; }
@@ -340,5 +345,11 @@ address {
     margin-top: 80px; }
   .look-book .lookbook-foot {
     padding-top: 160px; } }
+
+.diary-view #bo_v_con img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 /*# sourceMappingURL=campaign.css.map */

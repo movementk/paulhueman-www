@@ -262,6 +262,14 @@
 }
 /* celeb-view 추가 */
 .celeb-view {
+    #bo_v_con {
+        img {
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
     .product-aspect {
         .product-img {
             text-align: left;
@@ -478,6 +486,17 @@
         }
         .lookbook-foot {
             padding-top: 160px;
+        }
+    }
+}
+
+.diary-view {
+    #bo_v_con {
+        img {
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+            height: auto;
         }
     }
 }
