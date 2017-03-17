@@ -1,0 +1,344 @@
+@charset "UTF-8";
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+p {
+  margin-bottom: 0; }
+
+ul, ol {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+
+dl {
+  margin-bottom: 0; }
+
+address {
+  margin-bottom: 0; }
+
+.form-group {
+  margin-bottom: 0; }
+
+.campaign #content {
+  padding-bottom: 80px; }
+
+.lnb {
+  display: none; }
+  @media (min-width: 1280px) {
+    .lnb {
+      display: block; } }
+
+/* list 공통 */
+.campaign-list .glasses-list .row > div.none-sm {
+  display: none; }
+  @media (min-width: 768px) {
+    .campaign-list .glasses-list .row > div.none-sm {
+      display: block; } }
+.campaign-list .glasses-list .row > div.none-md {
+  display: none; }
+  @media (min-width: 992px) {
+    .campaign-list .glasses-list .row > div.none-md {
+      display: block; } }
+.campaign-list .glasses-list .row > div .glasses-item {
+  margin-bottom: 110px; }
+  @media (min-width: 768px) {
+    .campaign-list .glasses-list .row > div .glasses-item {
+      margin-bottom: 125px; } }
+  @media (min-width: 1280px) {
+    .campaign-list .glasses-list .row > div .glasses-item {
+      margin-bottom: 110px; } }
+  .campaign-list .glasses-list .row > div .glasses-item a {
+    display: block; }
+    .campaign-list .glasses-list .row > div .glasses-item a figure img {
+      width: 100%;
+      display: block;
+      margin: 0 auto; }
+    .campaign-list .glasses-list .row > div .glasses-item a figure figcaption {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #2b2b2b;
+      font-weight: 400;
+      line-height: 25px;
+      text-align: center;
+      font-family: 'Lato', sans-serif; }
+@media (min-width: 768px) {
+  .campaign-list .glasses-list .row > div:nth-of-type(2n + 1) {
+    clear: both; } }
+@media (min-width: 992px) {
+  .campaign-list .glasses-list .row > div:nth-of-type(2n + 1) {
+    clear: none; }
+  .campaign-list .glasses-list .row > div:nth-of-type(3n + 1) {
+    clear: both; } }
+
+/* diary-list */
+.diary-list figure figcaption {
+  font-weight: 600 !important; }
+
+/* celeb-list 추가 */
+.celeb-list figure figcaption {
+  font-family: 'Noto Sans KR', sans-serif !important; }
+
+/* video-list */
+.video-list .campaign-list .list ul li .play-view {
+  margin-bottom: 100px; }
+  .video-list .campaign-list .list ul li .play-view > p {
+    font-size: 12px;
+    color: #2b2b2b;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 35px;
+    font-family: 'Lato', sans-serif; }
+
+/* view 공통 */
+.campaign-view .details-img {
+  margin-bottom: 120px; }
+  @media (min-width: 768px) {
+    .campaign-view .details-img {
+      margin-bottom: 160px; } }
+  .campaign-view .details-img img {
+    display: block;
+    margin: 0 auto; }
+  .campaign-view .details-img figcaption {
+    font-size: 11px;
+    color: #2b2b2b;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif; }
+  @media (min-width: 768px) {
+    .campaign-view .details-img figcaption {
+      font-size: 12px;
+      line-height: 24px; } }
+  @media (min-width: 992px) {
+    .campaign-view .details-img figcaption {
+      margin-top: 30px;
+      line-height: 25px; } }
+.campaign-view .product-front {
+  margin-bottom: 75px; }
+  @media (min-width: 768px) {
+    .campaign-view .product-front {
+      margin-bottom: 100px; } }
+  @media (min-width: 992px) {
+    .campaign-view .product-front {
+      margin-bottom: 240px; } }
+  .campaign-view .product-front .product-img {
+    margin-bottom: 40px; }
+    .campaign-view .product-front .product-img img {
+      display: block;
+      margin: 0 auto; }
+    @media (min-width: 768px) {
+      .campaign-view .product-front .product-img {
+        margin-bottom: 55px; } }
+    @media (min-width: 992px) {
+      .campaign-view .product-front .product-img {
+        margin-bottom: 0; }
+        .campaign-view .product-front .product-img img {
+          display: inline-block;
+          text-align: left; } }
+  .campaign-view .product-front .product-info {
+    text-align: center; }
+    .campaign-view .product-front .product-info h3 {
+      font-size: 14px;
+      color: #2b2b2b;
+      font-weight: bold;
+      font-family: 'Lato', sans-serif; }
+      @media (min-width: 768px) {
+        .campaign-view .product-front .product-info h3 {
+          font-size: 15px; } }
+    .campaign-view .product-front .product-info .amount {
+      font-size: 12px;
+      color: #2b2b2b;
+      font-weight: 400;
+      margin: 20px 0 25px;
+      font-family: 'Lato', sans-serif; }
+    .campaign-view .product-front .product-info dl {
+      display: inline-block;
+      overflow: hidden; }
+      .campaign-view .product-front .product-info dl dt {
+        float: left;
+        clear: both;
+        font-size: 11px;
+        color: #2b2b2b;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: 'Lato', sans-serif; }
+        .campaign-view .product-front .product-info dl dt:after {
+          content: ":";
+          padding-left: 5px;
+          padding-right: 4px; }
+      .campaign-view .product-front .product-info dl dd {
+        float: left;
+        font-size: 11px;
+        color: #2b2b2b;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: 'Lato', sans-serif; }
+    @media (min-width: 992px) {
+      .campaign-view .product-front .product-info {
+        float: right;
+        text-align: left;
+        padding-right: 30px;
+        margin-top: 45px; } }
+.campaign-view .product-aspect .product-img {
+  margin-bottom: 100px; }
+  .campaign-view .product-aspect .product-img img {
+    display: block;
+    margin: 0 auto; }
+  @media (min-width: 768px) {
+    .campaign-view .product-aspect .product-img {
+      margin-bottom: 140px; } }
+  @media (min-width: 1280px) {
+    .campaign-view .product-aspect .product-img {
+      padding-left: 160px; }
+      .campaign-view .product-aspect .product-img img {
+        display: inline-block;
+        text-align: left; } }
+.campaign-view .product-aspect .product-feature {
+  text-align: center; }
+  .campaign-view .product-aspect .product-feature p {
+    font-size: 11px;
+    color: #2b2b2b;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 35px; }
+    .campaign-view .product-aspect .product-feature p:last-child {
+      margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .campaign-view .product-aspect .product-feature p {
+        font-size: 12px; } }
+
+/* celeb-view 추가 */
+.celeb-view .product-aspect .product-img {
+  text-align: left;
+  padding-left: 0; }
+  @media (min-width: 1280px) {
+    .celeb-view .product-aspect .product-img {
+      margin-bottom: 180px; } }
+
+/* lookbook */
+.look-book .lookbook-head {
+  margin: 0 auto;
+  max-width: 300px; }
+  .look-book .lookbook-head figure img {
+    margin: 0 auto; }
+  .look-book .lookbook-head figure figcaption h5 {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+    color: #2b2b2b;
+    font-weight: 600; }
+.look-book .lookbook-body {
+  margin: 0 auto;
+  max-width: 300px; }
+  .look-book .lookbook-body .lookbook-item figure {
+    position: relative;
+    top: 50px;
+    padding-top: 75px;
+    opacity: 0;
+    -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1); }
+    .look-book .lookbook-body .lookbook-item figure figcaption h5 {
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      line-height: 25px;
+      color: #2b2b2b;
+      font-weight: 600; }
+    .look-book .lookbook-body .lookbook-item figure.on {
+      top: 0;
+      opacity: 1; }
+.look-book .lookbook-foot {
+  clear: both;
+  padding-top: 85px; }
+  .look-book .lookbook-foot a {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: 35px;
+    line-height: 33px;
+    border: 1px solid #aaa;
+    color: #666;
+    text-align: center; }
+@media (min-width: 768px) {
+  .look-book .lookbook-head {
+    margin: auto;
+    max-width: none; }
+    .look-book .lookbook-head figure figcaption h5 {
+      font-size: 12px;
+      line-height: 25px;
+      text-align: center; }
+  .look-book .lookbook-body {
+    margin: auto;
+    max-width: none; }
+    .look-book .lookbook-body .lookbook-item figure {
+      padding-top: 115px; }
+      .look-book .lookbook-body .lookbook-item figure figcaption h5 {
+        font-size: 12px;
+        line-height: 25px; }
+    .look-book .lookbook-body .lookbook-type-1 figure {
+      top: auto;
+      left: 100px; }
+      .look-book .lookbook-body .lookbook-type-1 figure.on {
+        left: 0; }
+    .look-book .lookbook-body .lookbook-type-2 figure {
+      top: 100px; }
+      .look-book .lookbook-body .lookbook-type-2 figure.on {
+        top: 0; }
+    .look-book .lookbook-body .lookbook-type-3 {
+      overflow: hidden; }
+      .look-book .lookbook-body .lookbook-type-3 figure:nth-of-type(1) {
+        float: right;
+        text-align: right;
+        top: auto;
+        left: -100px; }
+        .look-book .lookbook-body .lookbook-type-3 figure:nth-of-type(1).on {
+          left: 0; }
+      .look-book .lookbook-body .lookbook-type-3 figure:nth-of-type(2) {
+        clear: right;
+        left: 100px; }
+        .look-book .lookbook-body .lookbook-type-3 figure:nth-of-type(2).on {
+          left: 0; }
+    .look-book .lookbook-body .lookbook-type-4 {
+      overflow: hidden; }
+      .look-book .lookbook-body .lookbook-type-4 figure:nth-of-type(1) {
+        top: auto;
+        left: 100px; }
+        .look-book .lookbook-body .lookbook-type-4 figure:nth-of-type(1).on {
+          left: 0; }
+      .look-book .lookbook-body .lookbook-type-4 figure:nth-of-type(2) {
+        float: right;
+        text-align: right;
+        left: -100px; }
+        .look-book .lookbook-body .lookbook-type-4 figure:nth-of-type(2).on {
+          left: 0; }
+  .look-book .lookbook-foot {
+    padding-top: 120px; }
+    .look-book .lookbook-foot a {
+      height: 40px;
+      line-height: 38px; } }
+@media (min-width: 1280px) {
+  .look-book .lookbook-head figure figcaption h5 {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 25px; }
+  .look-book .lookbook-body .lookbook-item figure {
+    padding-top: 150px; }
+    .look-book .lookbook-body .lookbook-item figure figcaption h5 {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 25px; }
+  .look-book .lookbook-body .lookbook-type-3 figure:nth-of-type(1) {
+    margin-top: 0; }
+  .look-book .lookbook-body .lookbook-type-3 figure:nth-of-type(2) {
+    margin-top: 250px;
+    clear: none; }
+  .look-book .lookbook-body .lookbook-type-4 figure:nth-of-type(1) {
+    float: left; }
+  .look-book .lookbook-body .lookbook-type-4 figure:nth-of-type(2) {
+    margin-top: 80px; }
+  .look-book .lookbook-foot {
+    padding-top: 160px; } }
+
+/*# sourceMappingURL=campaign.css.map */

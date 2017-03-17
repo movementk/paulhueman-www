@@ -1,0 +1,483 @@
+@import 'common';
+
+.campaign {
+    #content {
+        padding-bottom: 80px;
+    }
+}
+.lnb {
+    display: none;
+    @media(min-width: $lg) {
+        display: block;
+    }
+}
+/* list 공통 */
+.campaign-list {
+    .glasses-list {
+        .row {
+            > div {
+                &.none-sm {
+                    display: none;
+                    @media(min-width: $sm) {
+                        display: block;
+                    }
+                }
+                &.none-md {
+                    display: none;
+                    @media(min-width: $md) {
+                        display: block;
+                    }
+                }
+                .glasses-item {
+                    margin-bottom: 110px;
+                    @media(min-width: $sm) {
+                        margin-bottom: 125px;
+                    }
+                    @media(min-width: $lg) {
+                        margin-bottom: 110px;
+                    }
+                    a {
+                        display: block;
+                        figure {
+                            img {
+                                width: 100%;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                            figcaption {
+                                margin-top: 10px;
+                                font-size: 14px;
+                                color: #2b2b2b;
+                                font-weight: 400;
+                                line-height: 25px;
+                                text-align: center;
+                                @include lato();
+                            }
+                        }
+                    }
+                }
+                @media(min-width: $sm) {
+                    &:nth-of-type(2n + 1) {
+                        clear: both;
+                    }
+                }
+                @media(min-width: $md ) {
+                    &:nth-of-type(2n + 1) {
+                        clear: none;
+                    }
+                    &:nth-of-type(3n + 1) {
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
+}
+/* diary-list */
+.diary-list {
+    figure {
+        figcaption {
+            font-weight: 600 !important;
+        }
+    }
+}
+/* celeb-list 추가 */
+.celeb-list {
+    figure {
+        figcaption {
+            font-family: 'Noto Sans KR', sans-serif !important;
+        }
+    }
+}
+/* video-list */
+.video-list {
+    .campaign-list {
+        .list {
+            ul {
+                li {
+                    .play-view {
+                        margin-bottom: 100px;
+                        > p {
+                            font-size: 12px;
+                            color: #2b2b2b;
+                            text-align: center;
+                            font-weight: 600;
+                            margin-top: 35px;
+                            @include lato();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* view 공통 */
+.campaign-view {
+    .details-img {
+        margin-bottom: 120px;
+        @media(min-width: $sm) {
+            margin-bottom: 160px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        figcaption {
+            font-size: 11px;
+            color: #2b2b2b;
+            line-height: 22px;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 15px;
+            letter-spacing: 1px;
+            @include lato();
+        }
+        @media(min-width: $sm) {
+            figcaption {
+                font-size: 12px;
+                line-height: 24px;
+            }
+        }
+        @media(min-width: $md) {
+            figcaption {
+                margin-top: 30px;
+                line-height: 25px;
+            }
+        }
+    }
+    .product-front {
+        margin-bottom: 75px;
+        @media(min-width: $sm) {
+            margin-bottom: 100px;
+        }
+        @media(min-width: $md) {
+            margin-bottom: 240px;
+        }
+        .product-img {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            margin-bottom: 40px;
+            @media(min-width: $sm) {
+                margin-bottom: 55px;
+            }
+            @media(min-width: $md) {
+                margin-bottom: 0;
+                img {
+                    display: inline-block;
+                    text-align: left;
+                }
+            }
+        }
+        .product-info {
+            text-align: center;
+            h3 {
+                font-size: 14px;
+                color: #2b2b2b;
+                font-weight: bold;
+                @include lato();
+                @media(min-width: $sm) {
+                    font-size: 15px;
+                }
+            }
+            .amount {
+                font-size: 12px;
+                color: #2b2b2b;
+                font-weight: 400;
+                margin: 20px 0 25px;
+                @include lato();
+            }
+            dl {
+                display: inline-block;
+                overflow: hidden;
+                dt {
+                    float: left;
+                    clear: both;
+                    font-size: 11px;
+                    color: #2b2b2b;
+                    font-weight: 400;
+                    line-height: 20px;
+                    @include lato();
+                    &:after {
+                        content: ":";
+                        padding-left: 5px;
+                        padding-right: 4px;
+                    }
+                }
+                dd {
+                    float: left;
+                    font-size: 11px;
+                    color: #2b2b2b;
+                    font-weight: 400;
+                    line-height: 20px;
+                    @include lato();
+                }
+            }
+            @media(min-width: $md) {
+                float: right;
+                text-align: left;
+                padding-right: 30px;
+                margin-top: 45px;
+            }
+        }
+    }
+    .product-aspect {
+        .product-img {
+            margin-bottom: 100px;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+            @media(min-width: $sm) {
+                margin-bottom: 140px;
+            }
+            @media(min-width: $lg) {
+                padding-left: 160px;
+                img {
+                    display: inline-block;
+                    text-align: left;
+                }
+            }
+        }
+        .product-feature {
+            text-align: center;
+            p {
+                font-size: 11px;
+                color: #2b2b2b;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 35px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                @media(min-width: $sm) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+/* celeb-view 추가 */
+.celeb-view {
+    .product-aspect {
+        .product-img {
+            text-align: left;
+            padding-left: 0;
+            @media(min-width: $lg) {
+                margin-bottom: 180px;
+            }
+        }
+    }
+}
+
+/* lookbook */
+.look-book {
+    .lookbook-head {
+        margin: 0 auto;
+        max-width: 300px;
+        figure {
+            img {
+                margin: 0 auto;
+            }
+            figcaption {
+                h5 {
+                    @include lato();
+                    @include font(12px, 25px);
+                    color: #2b2b2b;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .lookbook-body {
+        margin: 0 auto;
+        max-width: 300px;
+        .lookbook-item {
+            figure {
+                position: relative;
+                top: 50px;
+                padding-top: 75px;
+                opacity: 0;
+                -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+                transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+                figcaption {
+                    h5 {
+                        @include lato();
+                        @include font(12px, 25px);
+                        color: #2b2b2b;
+                        font-weight: 600;
+                    }
+                }
+                &.on {
+                    top: 0;
+                    opacity: 1;
+                }
+            }       
+        }
+    }
+    .lookbook-foot {
+        clear: both;
+        padding-top: 85px;
+        a {
+            display: block;
+            margin: 0 auto;
+            max-width: 300px;
+            height: 35px;
+            line-height: 33px;
+            border: 1px solid #aaa;
+            color: #666;
+            text-align: center;
+        }
+    }
+    @media (min-width: $sm) {
+        .lookbook-head {
+            margin: auto;
+            max-width: none;
+            figure {
+                figcaption {
+                    h5 {
+                        @include font(12px, 25px);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .lookbook-body {
+            margin: auto;
+            max-width: none;
+            .lookbook-item {
+                figure {
+                    padding-top: 115px;
+                    figcaption {
+                        h5 {
+                            @include font(12px, 25px);
+                        }
+                    }
+                }
+            }
+            .lookbook-type-1 {
+                figure {
+                    top: auto;
+                    left: 100px;
+                    &.on {
+                        left: 0;
+                    }
+                }
+            }
+            .lookbook-type-2 {
+                figure {
+                    top: 100px;
+                    &.on {
+                        top: 0;
+                    }
+                }
+            }
+            .lookbook-type-3 {
+                overflow: hidden;
+                figure {
+                    &:nth-of-type(1) {
+                        float: right;
+                        text-align: right;
+                        top: auto;
+                        left: -100px;
+                        &.on {
+                            left: 0;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        clear: right;
+                        left: 100px;
+                        &.on {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+            .lookbook-type-4 {
+                overflow: hidden;
+                figure {
+                    &:nth-of-type(1) {
+                        top: auto;
+                        left: 100px;
+                        &.on {
+                            left: 0;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        float: right;
+                        text-align: right;
+                        left: -100px;
+                        &.on {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .lookbook-foot {
+            padding-top: 120px;
+            a {
+                height: 40px;
+                line-height: 38px;
+            }
+        }
+    }
+    @media (min-width: $lg) {
+        .lookbook-head {
+            figure {
+                figcaption {
+                    h5 {
+                        margin-top: 10px;
+                        @include font(14px, 25px);
+                    }
+                }
+            }
+        }
+        .lookbook-body {
+            .lookbook-item {
+                figure {
+                    padding-top: 150px;
+                    figcaption {
+                        h5 {
+                            margin-top: 10px;
+                            @include font(14px, 25px);
+                        }
+                    }
+                }
+            }
+            .lookbook-type-1 {
+            
+            }
+            .lookbook-type-2 {
+
+            }
+            .lookbook-type-3 {
+                figure {
+                    &:nth-of-type(1) {
+                        margin-top: 0;
+                    }
+                    &:nth-of-type(2) {
+                        margin-top: 250px;
+                        clear: none;
+                    }
+                }
+            }
+            .lookbook-type-4 {
+                figure {
+                    &:nth-of-type(1) {
+                        float: left;
+                    }
+                    &:nth-of-type(2) {
+                        margin-top: 80px;
+                    }
+                }
+            }
+        }
+        .lookbook-foot {
+            padding-top: 160px;
+        }
+    }
+}
